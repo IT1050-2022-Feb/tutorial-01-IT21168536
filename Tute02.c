@@ -19,16 +19,15 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
-  	int km_rate;
-	float rate;
-	printf("enter KM =");
-	scanf("%d",&km_rate);
-	
+  	int km_rate;// declare variable
+	float rate;// declare variable
+	printf("enter KM =");// get value
+	scanf("%d",&km_rate);// read value
 	if(km_rate <= 30)
-		rate = km_rate * 50;
+		rate = km_rate * 50;// calculate the rate
 	else 
-		rate = 30 * km_rate + (km_rate - 30) * 40  ;
+		rate = 30 * km_rate + (km_rate - 30) * 40  ;// calculate  the rate
   
-	printf("Amount to be paid for a rented vehical= %.2f",rate);
+	printf("Amount to be paid for a rented vehical= %.2f",rate);// print rate
 return 0;
-}
+}// end the main funtion
